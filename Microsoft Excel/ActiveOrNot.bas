@@ -38,7 +38,7 @@ Sub ActiveOrNot()
         Set Ws2_Location = Tracking_Range.Find(Current_Value)
         
         If Ws2_Location Is Nothing Then
-          Ws1.Cells(i, 1).Font.Bold = True
+          Ws1.Cells(i, 1).Interior.Color = RGB(255, 0, 0)
         End If
     Next i
     
